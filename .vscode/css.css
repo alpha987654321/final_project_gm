@@ -1,0 +1,368 @@
+/* UTILITIES */
+
+* {
+
+    margin: 0;
+    
+    padding: 0;
+    
+    box-sizing: border-box;
+    
+    }
+    
+    body {
+    
+    font-family: cursive;
+    background-color: #79569f;
+    
+    }
+    
+    a {
+    
+    text-decoration: none;
+    
+    }
+    
+    li {
+    
+    list-style: none;
+    
+    }
+    /* NAVBAR STYLING STARTS */
+
+.navbar {
+
+    display: flex;
+    
+    align-items: center;
+    
+    justify-content: space-between;
+    
+    padding: 20px;
+    
+    background-color: rgb(10, 19, 99);
+    
+    color: #2a00c1;
+    
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    z-index: 1;
+    }
+    
+    .nav-links a {
+    
+    color: #0069d3;
+    
+    }
+    
+    /* LOGO */
+    
+    .logo {
+    
+    font-size: 32px;
+    
+    }
+    
+    /* NAVBAR MENU */
+    
+    .menu {
+    
+    display: flex;
+    
+    gap: 1em;
+    
+    font-size: 18px;
+    
+    }
+    
+    .menu li:hover {
+    
+    background-color: #24004a;
+    
+    border-radius: 5px;
+    
+    transition: 0.3s ease;
+    
+    }
+    
+    .menu li {
+    
+    padding: 5px 14px;
+    
+    }
+    
+    /* DROPDOWN MENU */
+    
+    .services {
+    
+    position: relative; 
+    
+    }
+    
+    .dropdown {
+    
+    background-color: rgb(10, 19, 99);
+    
+    padding: 1em 0;
+    
+    position: absolute; /*WITH RESPECT TO PARENT*/
+    
+    display: none;
+    
+    border-radius: 8px;
+    
+    top: 35px;
+    
+    }
+    
+    .dropdown li + li {
+    
+    margin-top: 10px;
+    
+    }
+    
+    .dropdown li {
+    
+    padding: 0.5em 1em;
+    
+    width: 8em;
+    
+    text-align: center;
+    
+    }
+    
+    .dropdown li:hover {
+    
+    background-color: #24004a;
+    
+    }
+    
+    .services:hover .dropdown {
+    
+   display: block;
+    
+    }
+
+    * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        margin: 0;
+      }
+      
+      /* Style the header */
+      .header {
+        background-color: #f1f1f1;
+        padding: 20px;
+        text-align: center;
+      }
+      
+      /* Style the top navigation bar */
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+      }
+      
+      /* Style the topnav links */
+      .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      /* Change color on hover */
+      .topnav a:hover {
+        background-color: #ddd;
+        color: rgb(115, 0, 0);
+      }
+      
+      /* Create three unequal columns that floats next to each other */
+      .column {
+        float: left;
+        padding: 10px;
+        text-align: center;
+        
+      }
+      
+      /* Left and right column */
+      .column.side {
+        width: 25%;
+        
+      }
+      
+      /* Middle column */
+      .column.middle {
+        width: 50%;
+        line-height: 3em;
+      }
+      
+      /* Clear floats after the columns */
+      .row::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column.side, .column.middle {
+          width: 100%;
+        }
+      }
+      /* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+  }
+  
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+  }
+  .footer-basic {
+    padding:40px 0;
+    background-color:#755c94 ;
+    color:#2f2f30;
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
+    
+  }
+  
+  /* Credit to https://epicbootstrap.com/snippets/footer-basic */
+  .imgsnap{
+    height: 300px;
+  }
+  .videom{
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+  }
+  .footer{
+    background-color:#8e74ae ;
+  }
+  .rkt{
+    width: 100%;
+  }
+  .cod{
+    width: 100%;
+  }
+  .fort{
+    width: 100%; 
+  }
+  /* Container holding the image and the text */
+.containerb {
+  position: relative;
+}
+
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  bottom: 300px;
+  right: 20px;
+
+  color: rgb(206, 226, 255);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+h1{
+  font-size: 70px;
+}
+p{
+  font-size: larger;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+.vidi{
+  width: 100%;
+}
+.fucku{
+  text-align: center;
+  color: #2a00c1;
+}
+.left, .right {
+  float: left;
+  width: 20%; /* The width is 20%, by default */
+}
+
+.main {
+  float: left;
+  width: 60%; /* The width is 60%, by default */
+}
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
